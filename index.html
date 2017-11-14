@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
 </head>
 <body>
   <header class="main-header">
-    <nav class="second-navigation">
+    <nav class="secondary-navigation">
       <a class="main-header-logo">
         <img src="logo.png" alt="Логотип Device">
       </a>
-      <!--Здесь будет форма Поиск-->
+      <form action="https://echo.device.ru" method="get">
+        <label for="search-field"></label>
+        <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+      </form>
       <ul>
         <li><a href="compare.html">Сравнить</a></li>
         <li><a href="basket.html">Корзина</a></li>
@@ -37,14 +40,15 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main class="main-container">
+    <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
     <section class="sliders">
       <div class="slider-1">
         <a href="catalog.html">
         <img src="img/slider-1.png" alt="Моноподы для 
         селфи"> </a>
         <div class="description-sliders">
-        <h1>Делай селфи, как Бен Стиллер!</h1>
+        <h2>Делай селфи, как Бен Стиллер!</h2>
         <p>Cамая длинная палка для селфи доступна в 
          нашем магазине.
          Восемь (Восемь, Карл!) метров длиной и весом 
@@ -68,7 +72,7 @@
         <a href="catalog.html">
         <img src="img/slider-2.png" alt="Фитнес-браслеты"> </a>
         <div class="description-sliders">
-        <h1>Худеем правильно!</h1>
+        <h2>Худеем правильно!</h2>
         <p>Мотивирующие фитнес-браслеты помогут найти в 
         себе силы не пропускать занятия и соблюдать 
         диету.</p>
@@ -88,7 +92,7 @@
         <img src="img/slider-3.png" alt="Квадрокоптеры">
         </a>
         <div class="description-sliders">
-        <h1>Порхает как бабочка,жалит как пчела!</h1>
+        <h2>Порхает как бабочка,жалит как пчела!</h2>
         <p>Этот обычный, на первый взгляд, квадрокоптер 
         оснащен мощным лазером,замаскированным под 
         стандартную камеру.</p>
@@ -105,45 +109,48 @@
         </table>
         </div>
       </div>
+      <ul>
+        <li><button class="show-sliders-1"></button></li>
+        <li><button class="show-sliders-2"></button></li>
+        <li><button class="show-sliders-3"></button></li>
+      </ul>  
     </section>
+
     <section class="popular-products">
       <ul>
-      <li class="popular-item">
-        <h3> <a href="catalog.html">Виртуальная реальность</a></h3>
-        <a href="catalog.html">
-          <img src="popular-1.png" alt="Виртуальная реальность">
-        </a>
-      </li>
-      <li class="popular-item">
-        <h3> <a href="catalog.html">Моноподы для селфи</a></h3>
-        <a href="catalog.html">
-          <img src="popular-monopods-for-selfies.png" alt="Моноподы для селфи">
-        </a>
-      </li>
-      <li class="popular-item">
-        <h3> <a href="catalog.html">Экшн-камеры</a></h3>
-        <a href="catalog.html">
-          <img src="popular-action-cameras.png" alt="Экшн-камеры">
-        </a>
-      </li>
-      <li  class="popular-item">
-        <h3> <a href="catalog.html">Фитнес-браслеты</a></h3>
-        <a href="catalog.html">
-          <img src="popular-fitnes-braselets.png" alt="Фитнес-браслеты">
-        </a>
-      </li>
-      <li class="popular-item">
-        <h3><a href="catalog.html">Умные часы </a></h3>
-        <a href="catalog.html">
-          <img src="popular-smart-watch.png" alt="Умные часы">
-        </a>
-      </li>
-      <li class="popular-item">
-        <h3><a href="catalog.html">Квадрокоптеры</a></h3>
-        <a href="catalog.html">
-          <img src="popular-quadrocopters.png" alt="Квадрокоптеры">
-        </a>
-      </li>
+        <li><h3><a href="catalog.html">Виртуальная реальность</a></h3></li>
+        <li><h3><a href="catalog.html">Моноподы для селфи</a></h3></li>
+        <li><h3><a href="catalog.html">Экшн-камеры</a></h3></li>
+        <li><h3><a href="catalog.html">Фитнес-браслеты</a></h3></li>
+        <li><h3><a href="catalog.html">Умные часы </a></h3></li>
+        <li><h3><a href="catalog.html">Квадрокоптеры</a></h3></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="catalog.html">
+            <img src="popular-1.png" alt="Виртуальная реальность"></a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="popular-monopods-for-selfies.png" alt="Моноподы для 
+              селфи"></a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="popular-action-cameras.png" alt="Экшн-камеры"></a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="popular-fitnes-braselets.png" alt="Фитнес-браслеты"></a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="popular-smart-watch.png" alt="Умные часы"></a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="popular-quadrocopters.png" alt="Квадрокоптеры"></a>
+        </li>
       </ul>
     </section>
 
@@ -168,15 +175,26 @@
       </div>
     </section>
 
-    <section class="logo-sellers">
-      <a href="catalog.html">
-        <img src="logo-sellers-1.jpg" alt="Логотип Dji"></a>
-      <a href="catalog.html">
-        <img src="logo-sellers-2.jpg" alt="Логотип SP Gadgets"></a>
-      <a href="catalog.html">
-        <img src="logo-sellers-3.jpg" alt="Логотип GoPro"></a>
-      <a href="catalog.html">
-        <img src="logo-sellers-4.jpg" alt="Логотип Vive"></a>
+    <section class="logo-brends">
+      <h2 class="visually-hidden">Логотипы брендов</h2>
+      <ul>
+        <li>
+          <a href="catalog.html">
+            <img src="logo-brends-1.jpg" alt="Логотип Dji"></a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="logo-brends-2.jpg" alt="Логотип SP Gadgets"></a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="logo-brends-3.jpg" alt="Логотип GoPro"></a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="logo-brends-4.jpg" alt="Логотип Vive"></a>
+        </li>
+      </ul>
     </section>
 
     <section class="about-us">
@@ -197,20 +215,30 @@
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы  
          сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <a href="map.html"></a>
-      <a href="Write-us">Напишите нам</a>
+      <h3 class="visually-hidden">как до нас добраться</h3>
+      <p>
+        <a href="img/map-big.jpg">
+          <img src="img/map.jpg" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+        </a> 
+      </p>
     </section>
 
     <section class="modal-write-us">
-      <p>Ваше имя</p>
-      <!--форма-->
-      <p>Ваш e-mail</p>
-      <!--форма-->
-      <p>Текс письма</p>
-      <!--форма-->
-      <button>Отправить</button>
+      <h2 class="visually-hidden"> modal forms write us</h2>
+      <button class="open-write-us" type="button">Напишите нам</button>
+      <form action="https://echo.device.ru" method="get">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+        <label for="e-mail-field">Ваш e-mail:</label>
+        <input type="text" name="e-mail" id="e-mail-field" placeholder="Для отправки ответа">
+        <label for="text-mail-field">Текст письма</label>
+        <textarea name="text-mail" id="text-mail-field" rows="10" cols="100" placeholder="В свободной форме"></textarea>
+        <input type="submit" value="Отправить">
+      </form> 
+      <button class="modal-close" type="button">закрыть</button>
     </section>
   </main>
+
   <footer class="main-footer">
     <img src="img/index-logo.svg" width="170" height="40" 
          alt="Логотип Device">
