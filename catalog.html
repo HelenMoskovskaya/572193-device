@@ -7,9 +7,8 @@
 <body>
   <header class="main-header">
     <nav class="secondary-navigation">
-      <a class="main-header-logo">
-        <img src="logo.png" alt="Логотип Device">
-      </a>
+      <div class="main-logo">DEVICE</div>
+        <a class="main-header-logo"></a>
       <form action="https://echo.device.ru" method="get">
         <label for="search-field"></label>
         <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
@@ -55,11 +54,9 @@
       <form class="filters" action="https://echo.device.ru" method="get">
         <fieldset>
           <legend>Стоимость</legend>
-          <ul>
-            <li class="min-price"></li>
-            <li class="max-price"></li>
-            <li class="range"></li>
-          </ul>
+            <div class="min-price">от 0</div>
+            <div class="max-price">до 5000</div>
+            <div class="range"></div>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
@@ -163,8 +160,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <img src="img/index-logo.svg" width="170" height="40" 
-         alt="Логотип Device">
+    <div class="main-logo">DEVICE</div>
     <p>г. Москва, ул. Строителей, 15</p>
     <ul class="footer-services">
       <li><a href="services.html">Доставка</a></li>
