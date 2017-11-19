@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "gilroyextrabold";
+    src: url("gilroyextrabold.woff") format("woff"),
+         url("gilroyextrabold.woff2") format("woff2"),
+         url("gilroylight.woff") format("woff"),
+         url("gilroylight.woff2") format("woff2"),
+         url("opensans.woff") format("woff"),
+         url("opensans.woff2") format("woff2"),
+         url("opensanslight.woff") format("woff"),
+         url("opensanslight.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans;
+}
+
+a {
+    text-decoration: none;
+}
+
