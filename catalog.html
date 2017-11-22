@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <nav class="secondary-navigation">
-      <a class="main-logo" href="index.html">
+      <a class="main-logo logo-header" href="index.html">
         <div class="main-logo">DEVICE</div></a>
-      <form action="https://echo.device.ru" method="get">
+      <form class="search" action="https://echo.device.ru" method="get">
         <label for="search-field"></label>
         <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
       </form>
-      <ul>
+      <ul class="user-navigation">
         <li><a href="compare.html">Сравнить</a></li>
         <li><a href="basket.html">Корзина</a></li>
       </ul>
@@ -22,11 +24,13 @@
         Валентин Петухов</a></li>
         <li class="login-link"><button>Выйти</button></li>
       </ul>
-    </nav>
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li><a href="catalog.html">Каталог товаров</a>
         </li>
+        <li><a href="services.html">Доставка</a></li>
+        <li><a href="services.html">Гарантия</a></li>
+        <li><a href="services.html">Контакты</a></li>
       </ul>
       <ul class="header-drop-down-catalog">
         <li><a href="catalog.html">Виртуальная реальность</a></li>
@@ -42,25 +46,25 @@
     </nav>
   </header>
   <main class="container">
-    <h1 class="page title">Моноподы для селфи</h1>
+    <h1 class="page-title-1">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог товаров</a></li>
-      <li class="breadcrumbs-current">
+      <li><a class="breadcrumbs-items" href="index.html">Главная</a></li>
+      <li><a class="breadcrumbs-items" href="catalog.html">Каталог товаров</a></li>
+      <li class="breadcrumbs-items">
        Моноподы для селфи</li>
     </ul>
     <section class="filters">
-      <h2>Фильтр:</h2>
+      <h3 class="filters-title">Фильтр:</h3>
       <form class="filters" action="https://echo.device.ru" method="get">
         <fieldset>
-          <legend>Стоимость</legend>
+          <legend class="page-title-3">Стоимость</legend>
             <div class="min-price">от 0</div>
             <div class="max-price">до 5000</div>
             <div class="range"></div>
         </fieldset>
         <fieldset>
-          <legend>Цвет</legend>
-          <ul>
+          <legend class="page-title-3">Цвет</legend>
+          <ul class="colors">
             <li class="filter-option">
               <input class="visually-hidden filter-input checkbox" type="checkbox" name="black" id="filter-black" checked>
               <label for="filter-black">Черный</label>
@@ -84,8 +88,8 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Bluetooth</legend>
-          <ul>
+          <legend class="page-title-3">Bluetooth</legend>
+          <ul class="bluetooth-form">
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="yes" id="filter-yes" checked>
               <label for="filter-yes">Есть</label>
@@ -101,15 +105,15 @@
 
     </section>
     <section class="catalog">
-      <h2>Сортировка</h2>
+      <h3 class="sorting-title">Сортировка</h3>
       <ul class="sorting">
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По популярности</li>
+        <li class="sorting-price">По цене</li>
+        <li class="sorting-type">По типу</li>
+        <li class="sorting-popular">По популярности</li>
       </ul>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <h3>
+          <h3 class="page-title-3">
             <a href="catalog-item.html">Любительская 
            селфи-палка</a></h3>
             <img src="img/item-1.jpg"
@@ -118,7 +122,7 @@
           <span class="mark"></span>
         </li>
         <li class="catalog-item">
-          <h3>
+          <h3  class="page-title-3">
             <a href="catalog-item.html">Профессиональная 
             селфи-палка</a></h3>
             <img src="img/item-2.jpg" 
@@ -127,7 +131,7 @@
           <span class="mark"></span>
         </li>
         <li class="catalog-item">
-          <h3>
+          <h3 class="page-title-3">
             <a href="catalog-item.html">Непотопляемая 
            селфи-палка</a></h3>
             <img src="img/item-3.jpg" 
@@ -136,7 +140,7 @@
           <span class="mark"></span>
         </li>
         <li class="catalog-item">
-          <h3>
+          <h3 class="page-title-3">
             <a href="catalog-item.html">Селфи-палка 
            "Следуй за мной"</a></h3>
             <img src="img/item-4.jpg" 
@@ -145,24 +149,24 @@
           <span class="mark"></span>
         </li>
       </ul>
-      <ul>
+      <ul class="modal-basket-compare">
         <li><button>Добавить к сравнению</button></li>
         <li><button>Добавить в корзину</button></li>
       </ul>
       <ul class="pagination-list">
-        <li><button>Назад</button></li>
+        <li><button class="button-backward">Назад</button></li>
         <li class="pagination-item"><a href="#">1</a></li>
         <li class="pagination-item pagination-current">
-          <a>2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li><button>Вперед</button></li>
+          <a class="pagination-number">2</a></li>
+        <li class="pagination-item"><a class="pagination-number" href="#">3</a></li>
+        <li><button class="button-forward">Вперед</button></li>
       </ul>
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-logo" href="index.html">
-      <div class="main-logo">DEVICE</div></a>
-    <p>г. Москва, ул. Строителей, 15</p>
+    <a class="main-logo logo-footer" href="index.html">
+      <div class="main-logo logo-footer">DEVICE</div></a>
+    <p class="address">г. Москва, ул. Строителей, 15</p>
     <ul class="footer-services">
       <li><a href="services.html">Доставка</a></li>
       <li><a href="services.html">Гарантия</a></li>
@@ -182,7 +186,7 @@
         <li><a href="compare.html">Сравнить</a></li>
         <li><a href="basket.html">Корзина</a></li>
       </ul>
-      <p>Тел.: +7 (495) 495-95-95</p>
+      <p class="address">Тел.: +7 (495) 495-95-95</p>
   </footer>
 </body>
 </html>
