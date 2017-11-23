@@ -1,30 +1,35 @@
 @font-face {
-    font-family: "gilroyextrabold";
-    src: url("gilroyextrabold.woff") format("woff"),
-         url("gilroyextrabold.woff2") format("woff2"),
-         url("gilroylight.woff") format("woff"),
-         url("gilroylight.woff2") format("woff2"),
-         url("opensans.woff") format("woff"),
-         url("opensans.woff2") format("woff2"),
-         url("opensanslight.woff") format("woff"),
-         url("opensanslight.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Gilroy Extra Bold";
+    src: url("../fontsweb/gilroyextrabold.woff") format("woff"),
+         url("../fontsweb/gilroyextrabold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Gilroy Light";
+    src: url("../fontsweb/gilroylight.woff") format("woff"),
+         url("../fontsweb/gilroylight.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fontsweb/opensans.woff") format("woff"),
+         url("../fontsweb/opensans.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("../fontsweb/opensanslight.woff") format("woff"),
+         url("../fontsweb/opensanslight.woff2") format("woff2");
 }
 
 body {
     margin: 0;
     padding: 0;
 
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 15px;
     line-height: 2.0;
-    font-weight: 300;
     letter-spacing: 0,2px;
-    color: #464646;
+    color: #000000;
 
     background-color: #ffffff;
-
 }
 
 a {
@@ -33,95 +38,277 @@ a {
 }
 
 
-
-.button {
-    font-family: Gilroy, Proxima Nova, sans-serif;
-    font-size: 18px;
-    font-weight: 900;
-    color: #000000;
-    letter-spacing: 4px;
-
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-
-    border-color: transparent;
-    background-color: #f0c52e;
-}
-
 .main-header {
     background-color: #f7e296;
 }
 
 .main-logo {
-    font-family: Gilroy, Proxima Nova, sans-serif;
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
     font-size: 48px;
-    font-weight: 800;
     letter-spacing: 0.5px;
 }
-.logo-header {
+.main-logo.logo-header {
     color: rgba(0, 0, 0, 1);
 }
-.logo-header:hover {
-    color: rgba(0, 0, 0, 0.5);
+.main-logo.logo-header:hover {
+    color: rgba(0, 0, 0, 0.6);
 }
-.logo-header:active {
+.main-logo.logo-header:focus {
     color: rgba(0, 0, 0, 0.3);
 }
-.logo-footer {
+.main-logo.logo-footer {
     color: rgba(255, 198, 0, 1);
 }
-.logo-footer:hover {
-    color: rgba(255, 198, 0, 0.6);
+.main-logo.logo-footer:hover {
+    color: rgba(255, 198, 0, 0.5);
 }
-.logo-footer:active {
+.main-logo.logo-footer:active {
     color: rgba(255, 198, 0, 0.3);
 }
 
 .secondary-navigation,
 .user-navigation,
-.header-drop-down-catalog {
-    font-family: Open Sans, Arial, sans-serif;
-    font-size: 15px;
+.header-drop-down-catalog
+ {
     line-height: 2.4;
-    font-weight: 300;
-    letter-spacing: 0,2px;
-    color: #000000;
     list-style: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+.secondary-navigation a:hover,
+.user-navigation a:hover,
+.header-drop-down-catalog a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.secondary-navigation a:focus,
+.user-navigation a:focus,
+.header-drop-down-catalog a:focus {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation {
-    font-family: Gilroy, Proxima Nova, sans-serif;
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
     font-size: 18px;
-    font-weight: 800;
     letter-spacing: 3.6px;
     text-transform: uppercase;
-    color: rgba(345, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
     list-style: none;
 }
+.site-navigation a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.site-navigation a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
 
-.page-title-2 {
-    font-family: Gilroy, Proxima Nova, sans-serif;
+.page-title-1 {
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
     font-size: 47px;
-    font-weight: 800;
     letter-spacing: 0.5px;
     color: #000000;
 }
 
+.page-title-2 {
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
+    font-size: 47px;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.page-title-3 {
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+
+
+.button-1 {
+    width: 220px;
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+.button-1::before {
+    content: "";
+    width: 220px;
+    height: 8px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    display: block;
+    z-index: -1;
+    background-color: #f0c52e;
+}
+.button-1:hover {
+    background-color: #f0c52e;
+}
+.button-1:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
+.button-2 {
+    width: 160px;
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+.button-2::before {
+    content: "";
+    width: 160px;
+    height: 8px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    display: block;
+    z-index: -1;
+    background-color: #f0c52e;
+}
+.button-2:hover {
+    background-color: #f0c52e;
+}
+.button-2:focus {
+    color: #f7e184;
+    background-color: #000000;
+}
+
+
+.button-3 {
+    width: 260px;
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+}
+.button-3::before {
+    content: "";
+    width: 260px;
+    height: 8px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    display: block;
+    z-index: -1;
+    background-color: #f0c52e;
+}
+
+
+.button-4 {
+    width: 200px;
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+}
+.button-4::before {
+    content: "";
+    width: 200px;
+    height: 8px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    display: block;
+    z-index: -1;
+    background-color: #f0c52e;
+}
+
+.button-5 {
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+    font-size: 13px;
+    line-height: 2.77;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.button-6 {
+    width: 200px;
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+}
+.button-6::before {
+    content: "";
+    width: 200px;
+    height: 8px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    display: block;
+    z-index: -1;
+    background-color: #f0c52e;
+}
+.button-6:hover {
+    background-color: #f0c52e;
+}
+.button-6:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
 .characteristic {
-    font-family: Gilroy, Proxima Nova, sans-serif;
+    font-family: "Gilroy Light", "Proxima Nova", sans-serif;
     font-size: 36px;
-    font-weight: 300;
     letter-spacing: 0.4px;
     color: #000000;
 }
+
 .type {
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 13px;
-    font-weight: 300;
     line-height: 1.54;
     letter-spacing: 0.1px;
-    color: #464646;
+    color: #000000;
 }
 
 .show-sliders {
@@ -153,9 +340,8 @@ a {
 }
 
 .delivery-company {
-    font-family: Gilroy, Proxima Nova, sans-serif;
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
     font-size: 16px;
-    font-weight: 800;
     color: #000000;
     list-style: none;
 }
@@ -168,14 +354,19 @@ a {
     color: #ffffff;
 }
 
-.footer-services {
-    font-family: Gilroy, Proxima Nova, sans-serif;
+.site-navigation-footer {
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
     font-size: 18px;
-    font-weight: 800;
     letter-spacing: 3.6px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
     list-style: none;
+}
+.site-navigation-footer a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+.site-navigation-footer a:focus {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .social-button {
@@ -183,80 +374,87 @@ a {
 }
 
 .user-navigation-footer,
-.secondary-navigation-footer,
-.address {
-    font-family: Open Sans, Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 300;
+.secondary-navigation-footer {
     line-height: 2.4;
-    letter-spacing: 0.2px;
-    color: #ffffff;
     list-style: none;
 }
-
-
-.page-title-1 {
-    font-family: Gilroy, Proxima Nova, sans-serif;
-    font-size: 47px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    color: #000000;
+.user-navigation-footer a,
+.secondary-navigation-footer a {
+    color: rgba(255, 255, 255, 0.7);
 }
+.user-navigation-footer a:hover,
+.secondary-navigation-footer a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+.user-navigation-footer a:focus,
+.secondary-navigation-footer a:focus {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.address,
+.phone {
+    line-height: 2.4;
+    color: #ffffff;
+}
+
+
 
 .breadcrumbs {
     list-style: none;
 }
+
 .breadcrumbs-items {
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: 300;
     line-height: 2.57;
     letter-spacing: 0.1px;
     color: rgba(0, 0, 0, 0.3);
 }
 
+.breadcrumbs-items.catalog-breadcrumbs:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.breadcrumbs-items.catalog-breadcrumbs:focus {
+    color: rgba(0, 0, 0, 0.1);
+}
+
 .filters-title,
 .sorting-title {
-    font-family: Gilroy, Proxima Nova, sans-serif;
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
     font-size: 16px;
-    font-weight: 800;
     letter-spacing: 3.2px;
     text-transform: uppercase;
     color: #000000;
 }
+
 .sorting {
     list-style: none;
 }
 
-.sorting-price {
-    font-family: Open Sans, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.29;
-    color: rgba(0, 0, 0, 1);
-}
-
+.sorting-price,
 .sorting-type,
 .sorting-popular {
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 14px;
     line-height: 1.29;
     color: rgba(0, 0, 0, 0.3);
 }
-
-.page-title-3 {
-    font-family: Gilroy, Proxima Nova, sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    letter-spacing: 0.2px;
-    color: #000000;
+.sorting-price:hover,
+.sorting-type:hover,
+.sorting-popular:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.sorting-price:focus,
+.sorting-type:focus,
+.sorting-popular:focus {
+    color: rgba(0, 0, 0, 1);
 }
 
 .colors,
 .bluetooth-form {
     list-style: none;
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: 300;
     line-height: 2.86;
     letter-spacing: 0.1px;
     color: #000000;
@@ -267,11 +465,10 @@ a {
 }
 
 .catalog-item-price {
-    font-family: Gilroy, Proxima Nova, sans-serif;
+    font-family: "Gilroy Light", "Proxima Nova", sans-serif;
     font-size: 16px;
-    font-weight: 300;
     letter-spacing: 0.2px;
-    color: #464646;
+    color: #000000;
 }
 
 .modal-basket-compare {
@@ -281,9 +478,8 @@ a {
 .pagination-list,
 .button-backward,
 .button-forward {
-    font-family: Gilroy, Proxima Nova, sans-serif;
+    font-family: "Gilroy Extra Bold", "Proxima Nova", sans-serif;
     font-size: 16px;
-    font-weight: 800;
     letter-spacing: 3.2px;
     color: #000000;
     list-style: none;
@@ -298,6 +494,8 @@ a {
 .pagination-number {
     color: rgba(0, 0, 0, 0.3);
 }
+
+
 
 
 
