@@ -49,9 +49,6 @@ a {
 .main-header {
     margin: 0;
     padding: 0;
-    width: 1440px;
-    margin-top: 40px;
-    margin-left: 140px;
     background-color: #f7e296;
 }
 
@@ -160,7 +157,7 @@ a {
 }
 
 .secondary-navigation {
-    display: flex;
+    display:;
 }
 
 .page-title-1 {
