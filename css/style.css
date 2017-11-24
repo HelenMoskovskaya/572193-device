@@ -2,21 +2,29 @@
     font-family: "Gilroy Extra Bold";
     src: url("../fontsweb/gilroyextrabold.woff") format("woff"),
          url("../fontsweb/gilroyextrabold.woff2") format("woff2");
+         font-weight: normal;
+         font-style: normal;
 }
 @font-face {
     font-family: "Gilroy Light";
     src: url("../fontsweb/gilroylight.woff") format("woff"),
          url("../fontsweb/gilroylight.woff2") format("woff2");
+         font-weight: normal;
+         font-style: normal;
 }
 @font-face {
     font-family: "Open Sans";
     src: url("../fontsweb/opensans.woff") format("woff"),
          url("../fontsweb/opensans.woff2") format("woff2");
+         font-weight: normal;
+         font-style: normal;
 }
 @font-face {
     font-family: "Open Sans Light";
     src: url("../fontsweb/opensanslight.woff") format("woff"),
          url("../fontsweb/opensanslight.woff2") format("woff2");
+         font-weight: normal;
+         font-style: normal;
 }
 
 body {
@@ -39,6 +47,11 @@ a {
 
 
 .main-header {
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    margin-top: 40px;
+    margin-left: 140px;
     background-color: #f7e296;
 }
 
@@ -70,9 +83,21 @@ a {
     width: 441px;
     min-height: 50px;
     border: none;
+    opacity: 0.5
 }
-.search:-webkit-input-placeholder {
-    color: green;
+.search:hover {
+    opacity: 1
+}
+
+.img-1 {
+    filter:grayscale(1);
+    opacity: 0.5;
+    
+} 
+
+.img-1:hover {
+    opacity: 1;
+    filter: grayscale(0);
 }
 
 .search-text {
@@ -132,6 +157,10 @@ a {
 }
 .site-navigation a:focus {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.secondary-navigation {
+    display: flex;
 }
 
 .page-title-1 {
