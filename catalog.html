@@ -75,8 +75,8 @@
       <div class="wrapper-catalog">
         <div class="catalog-columns">
           <section class="filters">
-            <div class="wrapper-filters">
               <h3 class="filters-title">Фильтр:</h3>
+              <div class="wrapper-filters">
               <form class="filters" action="https://echo.device.ru" method="get">
                 <fieldset class="filters-items">
                   <legend class="page-title-3 range">Стоимость</legend>
@@ -137,32 +137,53 @@
             </div>
           </section>
           <section class="catalog">
-            <div class="wrapper-sorting">
-              <h3 class="sorting-title">Сортировка</h3>
-              <ul class="sorting">
-                <li><a class="sorting-item current" href="#">По цене</a></li>
-                <li><a class="sorting-type" href="#">По типу</a></li>
-                <li><a class="sorting-popular" href="#">По популярности</a></li>
-              </ul>
-            </div>
-            <ul class="catalog-list">
-              <li class="catalog-item">
-                <img class="catalog-item-img" src="img/item-1.jpg"
-                  alt="Любительская селфи-палка">
+          <div class="wrapper-sorting">
+            <h3 class="sorting-title">Сортировка</h3>
+            <ul class="sorting">
+              <li><a class="sorting-item current" href="#">По цене</a></li>
+              <li><a class="sorting-type" href="#">По типу</a></li>
+              <li><a class="sorting-popular" href="#">По популярности</a></li>
+            </ul>
+            <ul class="icon-dir">
+              <li><a href="#" class="icon-dir-up"></a></li>
+              <li><a href="#" class="icon-dir-down"></a></li>
+            </ul>
+          </div>
+          <section class="catalog-list">
+            <ul class="catalog-item">
+              <li>
+                <div class="img-hover-mask">
+                  <img class="catalog-item-img" src="img/item-1.jpg" alt="Любительская селфи-палка">
+                  <ul class="mask-basket-compare">
+                    <li><a href="#" class="button-yellow-line button-mask-cart">в корзину</a></li>
+                    <li><a href="#" class="button-mask-compare">Добавить к сравнению</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
                 <ul class="description-item title-price">
                   <li>
                     <h3 class="page-title-3">
                       <a href="dilletant-selfie.html">Любительская селфи-палка</a>
                     </h3>
                   </li>
-                  <li>
-                    <p class="catalog-item-price">500 руб.</p>
-                  </li>
+                  <li class="catalog-item-price">500 руб.</li>
                 </ul>
               </li>
-              <li class="catalog-item">
-                <img src="img/item-2.jpg" 
-                  alt="Профессиональная селфи-палка" width="360" height="380">
+              <li><span></span></li>
+            </ul>
+            <ul class="catalog-item">
+              <li>
+                <div class="img-hover-mask">
+                  <img src="img/item-2.jpg" 
+                    alt="Профессиональная селфи-палка" width="360" height="380">
+                  <ul class="mask-basket-compare">
+                    <li><a href="#" class="button-yellow-line button-mask-cart">в корзину</a></li>
+                    <li><a href="" class="button-mask-compare">Добавить к сравнению</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
                 <ul class="description-item title-price">
                   <li>
                     <h3 class="page-title-3">
@@ -172,9 +193,20 @@
                   <li class="catalog-item-price">1 500 руб.</li>
                 </ul>
               </li>
-              <li class="catalog-item">
-                <img src="img/item-3.jpg" 
-                  alt="Непотопляемая селфи-палка" width="360" height="380">
+              <li><span></span></li>
+            </ul>
+            <ul class="catalog-item">
+              <li>
+                <div class="img-hover-mask">
+                  <img src="img/item-3.jpg" 
+                    alt="Непотопляемая селфи-палка" width="360" height="380">
+                  <ul class="mask-basket-compare">
+                    <li><a href="#" class="button-yellow-line button-mask-cart">в корзину</a></li>
+                    <li><a href="#" class="button-mask-compare">Добавить к сравнению</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
                 <ul class="description-item title-price">
                   <li>
                     <h3 class="page-title-3">
@@ -187,9 +219,20 @@
                   </li>
                 </ul>
               </li>
-              <li class="catalog-item">
-                <img src="img/item-4.jpg" 
-                  alt="Селфи-палка Следуй за мной" width="360" height="380">
+              <li><span></span></li>
+            </ul>
+            <ul class="catalog-item">
+              <li>
+                <div class="img-hover-mask">
+                  <img src="img/item-4.jpg" 
+                    alt="Селфи-палка Следуй за мной" width="360" height="380">
+                  <ul class="mask-basket-compare">
+                    <li><a href="#" class="button-yellow-line button-mask-cart">в корзину</a></li>
+                    <li><a href="#" class="button-mask-compare">Добавить к сравнению</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
                 <ul class="description-item title-price">
                   <li>
                     <h3 class="page-title-3">
@@ -201,10 +244,7 @@
                   </li>
                 </ul>
               </li>
-            </ul>
-            <ul class="mask-basket-compare">
-              <li><a class="link-cart">в корзину</a></li>
-              <li><a class="link-compare">Добавить к сравнению</a></li>
+              <li><span class="new">NEW</span></li>
             </ul>
             <ul class="pagination-list">
               <li><a class="back" href="#"> Назад</a></li>
@@ -214,7 +254,8 @@
               <li><a class="forward" href="#">Вперед</a></li>
             </ul>
           </section>
-        </div>
+        </section>
+          </div>
       </div>
     </main>
     <footer class="main-footer">
