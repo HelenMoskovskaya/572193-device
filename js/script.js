@@ -1,5 +1,5 @@
 
-var link = document.querySelector(".button-write-us");
+var open = document.querySelector(".button-write-us");
 var popup = document.querySelector(".modal-write-us");
 var close = popup.querySelector(".modal-close");
 
@@ -12,21 +12,9 @@ var storage = localStorage.getItem("user-name");
 var storage = localStorage.getItem("mail");
 
 
-link.addEventListener("click", function(event) {
+open.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("modal-show");
-
-  if (storage) {
-    name.value = storage;
-    mail.focus();
-
-  if (storage) {
-    mail.value = storage;
-    text.focus();
-  } else { 
-    mail.focus();
-  }
-  } 
 })
 
 close.addEventListener ("click", function (event) {
