@@ -13,10 +13,8 @@
         <nav class="site-navigation">
           <div class="wrapper-second-user-navigation">
             <form class="search" action="https://echo.device.ru" method="get">
-              <label for="search-field"></label>
-              <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-              <label for="find-field"></label>
-              <input type="submit" name="find" value="Найти" id="find-field">
+              <input class="input-search" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+              <input class="input-submit" type="submit" name="find" value="Найти" id="find-field">
             </form>
             <ul class="user-navigation">
               <li><a class="login-link" href="profile.html">
@@ -72,13 +70,14 @@
             <label for="slider-3"></label>
           </div>
           <div class="slider-1">
-            <a href="catalog.html">
-            <img src="img/slider-1.png" width="384" height="486" alt="Моноподы для селфи"></a>
+            <div class="main-slider-img"><a href="catalog.html">
+              <img src="img/slider-1.png" width="384" height="486" alt="Моноподы для селфи"></a>
+            </div>
             <div class="description-sliders">
               <span class="number-slider">01</span>
               <h2 class="page-title-2">Делай селфи,<br>как Бен Стиллер!</h2>
               <p>Cамая длинная палка для селфи доступна в 
-                нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <a class="button-yellow-line" href="catalog/monopod.html">Подробнее</a>
               <table class=table-index-slider>
@@ -96,13 +95,14 @@
             </div>
           </div>
           <div class="slider-2">
-            <a href="catalog.html">
-            <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслеты"> </a>
+            <div class="main-slider-img"><a href="catalog.html">
+              <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслеты"> </a>
+            </div>
             <div class="description-sliders">
               <span class="number-slider">02</span>
               <h2 class="page-title-2">Худеем<br>правильно!</h2>
               <p>Мотивирующие фитнес-браслеты помогут найти в 
-                себе силы<br>не пропускать занятия и соблюдать 
+                себе силы не пропускать занятия и соблюдать 
                 диету.
               </p>
               <a class="button-yellow-line" href="catalog/fitness.html">Подробнее</a>
@@ -117,14 +117,14 @@
             </div>
           </div>
           <div class="slider-3">
-            <a href="catalog.html">
-            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптеры">
-            </a>
+            <div class="main-slider-img"><a href="catalog.html">
+              <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптеры"></a>
+            </div>
             <div class="description-sliders">
               <span class="number-slider">03</span>
               <h2 class="page-title-2">Порхает как бабочка,<br>жалит как пчела!</h2>
               <p>Этот обычный, на первый взгляд, квадрокоптер 
-                оснащен<br>мощным лазером,замаскированным под 
+                оснащен мощным лазером,замаскированным под 
                 стандартную камеру.
               </p>
               <a class="button-yellow-line" href="catalog/quadro.html">Подробнее</a>
@@ -197,16 +197,15 @@
           </div>
           <div class="slider-services-1">
             <h2 class="page-title-2 services-title">Доставка</h2>
-            <p class="services-info-1">Мы с удовольствием доставим ваш товар прямо к вашему<br>подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем, поднимая его на ваш этаж.</p>
+            <p class="services-info-1">Мы с удовольствием доставим ваш товар прямо к вашему  подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
           <div class="slider-services-2">
             <h2 class="page-title-2 services-title">Гарантия</h2>
-            <p class="services-info-2">Если из-за возгорания купленного у нас товара у вас сгорит<br>дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+            <p class="services-info-2">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
           </div>
           <div class="slider-services-3">
             <h2 class="page-title-2 services-title">Кредит</h2>
-            <p class="services-info-3">Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут для вас наиболее выгодные<br>
-              условия кредита. Выгодные для нашего банка, разумеется.
+            <p class="services-info-3">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
             </p>
           </div>
         </div>
@@ -253,11 +252,11 @@
           <p class="info-contacts">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы  
             сможете проверить работоспособность покупки. Всякое бывает.
           </p>
-            <section class="info-map">
-              <h3 class="visually-hidden">как до нас добраться</h3>
-              <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
-            </section>
-            <a href="writeus.html" class="button-yellow-line button-write-us">Напишите нам</a> 
+          <section class="info-map">
+            <h3 class="visually-hidden">как до нас добраться</h3>
+            <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+          </section>
+          <a href="writeus.html" class="button-yellow-line button-write-us">Напишите нам</a> 
         </section>
       </div>
       <section class="modal-write-us">
@@ -279,7 +278,7 @@
       <section class="modal-map">
         <h2 class="visually-hidden">Интерактивная карта</h2>
         <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.11237494732!2d37.52742931544438!3d55.68703400453063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1512672461090" width="960" height="560"></iframe>
-        <button class="modal-map-close"></button>
+        <button class="modal-map-close">Закрыть</button>
       </section>
     </main>
     <footer class="main-footer">
@@ -326,12 +325,12 @@
         <section class="footer-social">
           <h2 class="visually-hidden">Контакты ы социальных сетях</h2>
           <ul>
-            <li class="social-button"><a href="#"><img src="img/fb.svg" alt="facebook" width="32" height="32"><span class="visually-hidden">Фейсбук</span></a></li>
-            <li class="social-button"><a href="#"><img src="img/instagram.svg" alt="instagram" width="32" height="32"><span class="visually-hidden">Инстаграм</span></a></li>
-            <li class="social-button"><a href="#"><img src="img/twitter.svg" alt="twitter" width="32" height="32"><span class="visually-hidden">Твиттер</span></a></li>
+            <li><a class="social-button button-facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button button-instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li><a class="social-button button-twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
           </ul>
-          <div class="academy-logo">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-academy.png" alt="htmlacademy" width="27" height="35"><span class="visually-hidden">HTML Academy</span></a>
+          <div>
+            <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
           </div>
         </section>
       </div>
